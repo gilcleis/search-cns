@@ -108,8 +108,18 @@ class FormatData{
         if (isset($result->Telefones->Telefone->numeroTelefone) && !empty($result->Telefones->Telefone->numeroTelefone)) {
             $user['numeroTelefone'] = $result->Telefones->Telefone->numeroTelefone;
         }
-        if (isset($result->Emails->Email[0]->descricaoEmail) && !empty($result->Emails->Email[0]->descricaoEmail)) {
-            $user['descricaoEmail'] = $result->Emails->Email[0]->descricaoEmail;
+        if (isset($result->Emails->Email)) {
+            if (isset($result->Emails->Email->descricaoEmail)) {
+                $user['descricaoEmail'] = $result->Emails->Email->descricaoEmail;
+            }
+
+            if (is_array($result->Emails->Email)) {
+                foreach ($result->Emails->Email as $email) {
+                    if ($email->tipoEmail == 'P') {
+                        $user['descricaoEmail'] = $email->descricaoEmail;
+                    }
+                }
+            }
         }        
         if (isset($result->DadosNacionalidade->PaisNascimento->codigoPais) && !empty($result->DadosNacionalidade->PaisNascimento->codigoPais)) {
             $user['codigoPaisNascimento'] = $result->DadosNacionalidade->PaisNascimento->codigoPais;
