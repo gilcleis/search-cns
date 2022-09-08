@@ -82,7 +82,7 @@ All notable changes to this project will be documented in this file.
 ## [0.9.4](https://github.com/gilcleis/search-cns/compare/0.9.3...0.9.4) (2022-09-08)
 
 ### Features
-* Correção do FormatData, ajuste do numeroCNS ([4369b7a](https://github.com/gilcleis/search-cns/commit/4369b7a8954e81879912512f76f943751958e1bd))
+* Correção do FormatData, ajuste do numeroCNS ([b8e2337](https://github.com/gilcleis/search-cns/commit/b8e233746d35171bca28f862303fce7a726863a1))
 ---
 ## [0.9.3](https://github.com/gilcleis/search-cns/compare/0.9.2...0.9.3) (2022-09-03)
 
