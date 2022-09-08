@@ -38,7 +38,8 @@
     },
     "require-dev": {
         "phpunit/phpunit": "=8.3.5",
-        "squizlabs/php_codesniffer": "3.5.*"
+        "squizlabs/php_codesniffer": "3.5.*",
+        "marcocesarato/php-conventional-changelog": "^1.15"
     },
     "scripts": {
         "psr12": "phpcs --standard=PSR12 --colors src/",
