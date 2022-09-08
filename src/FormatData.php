@@ -24,15 +24,19 @@ class FormatData{
     public static function toArray(\stdClass $result): array
     {
         $user = array();
-
-        if ( isset($result->Cartoes->CNS)&& is_array($result->Cartoes->CNS) ) {
+        
+  
+        if ( isset($result->Cartoes->CNS))  {
+            
             if (isset($result->Cartoes->CNS->numeroCNS)) {
                 $user['numeroCNS'] = $result->Cartoes->CNS->numeroCNS;
             }
 
-            foreach ($result->Cartoes->CNS as $cns) {
-                if ($cns->tipoCartao == 'D') {
-                    $user['numeroCNS'] = $cns->numeroCNS;
+            if(is_array($result->Cartoes->CNS)){
+                foreach ($result->Cartoes->CNS as $cns) {
+                    if ($cns->tipoCartao == 'D') {
+                        $user['numeroCNS'] = $cns->numeroCNS;
+                    }
                 }
             }
         }
