@@ -4,6 +4,16 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [0.9.5](https://github.com/gilcleis/search-cns/compare/0.9.4...0.9.5) (2022-09-08)
+
+### Chores
+
+* Add changelog.md ([6e5e07](https://github.com/gilcleis/search-cns/commit/6e5e07cb0e0a19f98e108e33864b7eb95b75ebcf))
+* Add marcocesarato/php-conventional-changelog ([212fb6](https://github.com/gilcleis/search-cns/commit/212fb6adedf822e4c1df8e16c685d9485bf9f703))
+
+
+---
+
 ## [0.9.4](https://github.com/gilcleis/search-cns/compare/0.9.3...0.9.4) (2022-09-08)
 
 ### Features
