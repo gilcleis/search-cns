@@ -4,6 +4,10 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [0.10.0-rc.1](https://github.com/gilcleis/search-cns/compare/0.10.0...0.10.0-rc.1) (2022-09-10)
+
+
+---
 ## [0.10.0](https://github.com/gilcleis/search-cns/compare/0.9.6...0.10.0) (2022-09-10)
 
 ### Features
