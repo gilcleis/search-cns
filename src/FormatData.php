@@ -140,4 +140,19 @@ class FormatData{
         }
         return $user;
     }
+
+    /**
+     * Converte o objeto do usuario para arrayList
+     *
+     * @param array                 $result  dados retornados do
+     *
+     * @return array
+     */
+    public static function toArrayList(array $results):array{
+        $list = array();
+        foreach($results as $result){
+            array_push($list, FormatData::toArray($result));
+        }
+        return $list;
+    }
 }

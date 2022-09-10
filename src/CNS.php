@@ -181,9 +181,9 @@ class CNS
             $dataSus->higienizar = '0';
             $result = $client->pesquisar($dataSus);        
             if(is_array($result->ResultadoPesquisa)){
-                return FormatData::toArray($result->ResultadoPesquisa[0]); 
+                return FormatData::toArrayList($result->ResultadoPesquisa); 
             }    
-            return FormatData::toArray($result->ResultadoPesquisa); 
+            return FormatData::toArray($result->ResultadoPesquisa);  
          
         } catch (\Exception $e) {            
             throw new WsAccessExeption("webservice error: {$e->getMessage()}");
