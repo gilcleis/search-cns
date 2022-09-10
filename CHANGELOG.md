@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [0.9.6](https://github.com/gilcleis/search-cns/compare/0.9.5...0.9.6) (2022-09-10)
+
+### Bug Fixes
+
+* Return array ([7ff68e](https://github.com/gilcleis/search-cns/commit/7ff68e1070198b7ca726c26741f23464976f63e4))
+
+
+---
+
 ## [0.9.5](https://github.com/gilcleis/search-cns/compare/0.9.4...0.9.5) (2022-09-08)
 
 ### Chores
