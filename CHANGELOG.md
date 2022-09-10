@@ -4,6 +4,21 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [0.10.0](https://github.com/gilcleis/search-cns/compare/0.9.6...0.10.0) (2022-09-10)
+
+### Features
+
+* Add FormatData::toArrayList ([0a4cc2](https://github.com/gilcleis/search-cns/commit/0a4cc23ad1eb95b62fc1b9d7f7d9cb5abbf5686f))
+
+
+---
+
+<!--- BEGIN HEADER -->
+# Changelog
+
+All notable changes to this project will be documented in this file.
+<!--- END HEADER -->
+
 ## [0.9.6](https://github.com/gilcleis/search-cns/compare/0.9.5...0.9.6) (2022-09-10)
 
 ### Bug Fixes
