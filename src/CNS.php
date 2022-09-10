@@ -179,7 +179,10 @@ class CNS
             $dataSus->FiltroPesquisa->Mae->Nome = $nomeMae;
             $dataSus->FiltroPesquisa->tipoPesquisa = 'APROXIMADA';
             $dataSus->higienizar = '0';
-            $result = $client->pesquisar($dataSus);            
+            $result = $client->pesquisar($dataSus);        
+            if(is_array($result->ResultadoPesquisa)){
+                return FormatData::toArray($result->ResultadoPesquisa[0]); 
+            }    
             return FormatData::toArray($result->ResultadoPesquisa); 
          
         } catch (\Exception $e) {            
